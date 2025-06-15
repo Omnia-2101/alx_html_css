@@ -84,3 +84,43 @@ th, td {
 .btn-primary:hover {
   background-color: #eab308;
 }
+
+/* Quote Section */
+.quote-section {
+  background-color: #F9FAFB; /* Figma background */
+  padding: 60px 32px;
+  text-align: center;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #333333;
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+
+.quote-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.quote-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111827;
+}
+
+.author-role {
+  font-size: 16px;
+  color: #6B7280;
+}
