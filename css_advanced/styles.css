@@ -16,3 +16,71 @@ th, td {
   padding: 10px;
   border: 1px solid #ccc;
 }
+
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+.site-header {
+  background-color: #1f2937;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+}
+
+/* Banner Section */
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://i.ibb.co/gTDZZT8/ALX-Logo-07.png') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #facc15;
+  color: #1f2937;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #eab308;
+}
