@@ -5,16 +5,22 @@
   box-sizing: border-box;
 }
 
-/* Variables */
 :root {
   --main-color: #FF6565;
-  --font-body: 'Source Sans Pro', sans-serif;
   --max-width: 1000px;
+  --font-body: 'Source Sans Pro', sans-serif;
 }
 
 body {
   font-family: var(--font-body);
-  color: #000;
+  color: white;
+}
+
+/* Header styles */
+.hero {
+  background: url('images/headphones_hero_1.jpg') center/cover no-repeat;
+  padding: 100px 0;
+  text-align: center;
 }
 
 .container {
@@ -23,58 +29,65 @@ body {
   padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding-bottom: 40px;
 }
+
+.logo {
+  height: 40px;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
+
 .nav-links a {
+  color: white;
   text-decoration: none;
-  color: inherit;
+  transition: color 0.3s;
 }
 .nav-links a:hover {
   color: var(--main-color);
 }
 
-/* Hero section */
-.hero {
-  padding: 100px 0;
-  text-align: center;
-}
-.hero h1 {
+.hero-content h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.hero p {
-  font-size: 1.2rem;
+
+.hero-content p {
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
-button {
+
+.cta {
   background: var(--main-color);
-  border: none;
   padding: 0.8rem 2rem;
-  color: #fff;
+  border: none;
   cursor: pointer;
+  color: white;
+  transition: opacity 0.3s;
 }
-button:hover {
+.cta:hover {
   opacity: 0.9;
 }
 /* What we do section */
 .what-we-do {
   padding: 60px 0;
   text-align: center;
+  color: #000;
+  background: #fff;
 }
 
 .what-we-do h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #000;
 }
 
 .section-description {
@@ -94,9 +107,7 @@ button:hover {
 .card {
   flex: 1 1 200px;
   padding: 1rem;
-  border-radius: 0.5rem;
   transition: transform 0.3s;
-  text-align: center;
 }
 
 .card span {
@@ -107,7 +118,13 @@ button:hover {
 }
 
 .card h3 {
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
+  color: #000;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .card:hover {
@@ -117,12 +134,13 @@ button:hover {
 .our-results {
   padding: 60px 0;
   text-align: center;
-  background-color: #f8f8f8; /* optional light background */
+  background: #f8f8f8; /* optional background */
 }
 
 .our-results h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #000;
 }
 
 .our-results-cards {
@@ -133,30 +151,39 @@ button:hover {
 }
 
 .result-card {
-  flex: 1 1 200px;
   position: relative;
+  flex: 1 1 180px;
   padding: 2rem 1rem;
+  text-align: center;
 }
 
 .result-card .pentagon {
   width: 100px;
   height: 100px;
-  background: var(--main-color); /* we'll draw a real pentagon later */
-  margin: 0 auto 1rem auto;
+  background: var(--main-color);
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  margin: 0 auto;
+  position: relative;
 }
 
 .result-card span {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
 }
 
 .result-card p {
   margin-top: 1rem;
+  color: #333;
+}
+.hero {
+  background: url('images/headphones_hero_1.jpg') center/cover no-repeat;
+}
+@font-face {
+  font-family: "holberton_school-icon";
+  src: url("holberton_school-icon/fonts/holberton_school-icon.eot"); /* etc. */
 }
